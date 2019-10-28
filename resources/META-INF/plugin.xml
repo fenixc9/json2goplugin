@@ -1,0 +1,42 @@
+<idea-plugin>
+    <id>com.lforeverhao.plugin.json2go</id>
+    <name>json2go</name>
+    <version>0.1</version>
+    <vendor email="hao.liu@wayz.ai">wayz</vendor>
+
+    <description>
+        类似gsonformat的，一个基于json生成golang struct的插件
+        1. generate
+        2. 点击json2go
+        3. 传入json
+        4. 点击ok
+    </description>
+
+    <change-notes>
+        v0.1: 完成基本功能
+        紫薯布丁紫薯布丁紫薯布丁紫薯布丁紫薯布丁紫薯布丁紫薯布丁紫薯布丁紫薯布丁紫薯布丁
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+
+    <actions>
+        <action id="com.lforeverhao" class="com.lforeverhao.plugin.MainAction" text="json2go">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+    </actions>
+
+    <!--  <depends>com.intellij.modules.go</depends>-->
+    <depends>com.intellij.modules.lang</depends>
+</idea-plugin>
