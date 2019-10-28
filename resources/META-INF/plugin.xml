@@ -4,13 +4,22 @@
     <version>0.1</version>
     <vendor email="hao.liu@wayz.ai">wayz</vendor>
 
-    <description>
-        类似gsonformat的，一个基于json生成golang struct的插件
-        1. generate
-        2. 点击json2go
-        3. 传入json
-        4. 点击ok
-    </description>
+    <description><![CDATA[
+  <p>
+  类似gsonformat的，一个基于json生成golang struct的插件
+  <li>1. generate</li>
+  <li>2. 点击json2go</li>
+  <li>3. 传入json</li>
+  <li>4. 点击ok</li>
+  <li></li>
+  <li>注意</li>
+  <li>1. 每个struct的名称跟json中的名称一致，首字母转大写，**只有根节点的需要手动指定**。</li>
+  <li>2. struct的每个字段跟json中名称一致，首字母转大写，后续版本开放自定义struct名。</li>
+  <li>3. 当前struct均为指针，后续版本开放自定义指针。</li>
+  <li>4. 如果出现同名struct，插件将会把父struct名称和struct名称拼接在一起。</li>
+
+  </p>
+]]></description>
 
     <change-notes>
         v0.1: 完成基本功能
